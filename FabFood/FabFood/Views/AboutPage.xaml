@@ -10,6 +10,7 @@
               x:Name="MyMap"
               IsShowingUser="true"
               MapType="Hybrid"/>
+    <Label Text="Our menu changes daily based on available foods in stock. For fresh exciting meals, come to us!"/>
   </StackLayout>
   
   

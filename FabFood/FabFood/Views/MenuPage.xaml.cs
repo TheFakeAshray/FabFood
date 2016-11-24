@@ -14,15 +14,18 @@ namespace FabFood.Views
         {
             Content = new StackLayout
             {
-                Padding = new Thickness(0, Device.OnPlatform<int>(20, 80, 0), 0, 0),
+                Padding = new Thickness(0, Device.OnPlatform<int>(0, 80, 0), 0, 0),
                 Children = {
                 new MainLink("MainPage"),
                 new MainLink("BookPage"),
                 new MainLink("AboutPage"),
-            }
+                new MainLink("ReactionPage")
+                },
+                Spacing = 0,
+                MinimumHeightRequest = 40,
             };
             Title = "Master";
-            BackgroundColor = Color.Gray.WithLuminosity(0.9);
+            BackgroundColor = Color.White.WithLuminosity(1);
             Icon = Device.OS == TargetPlatform.iOS ? "menu.png" : null;
         }
     }

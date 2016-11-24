@@ -16,14 +16,8 @@
         <ColumnDefinition Width="3*"/>
 
       </Grid.ColumnDefinitions>
-      <Image Source="back2.jpg" Grid.RowSpan ="4" Grid.ColumnSpan="3" Aspect="AspectFill"></Image>
-      <Image Source="fabf.png" Grid.Row="0" Grid.ColumnSpan="3" Aspect="AspectFit">
-        <!--<Image.GestureRecognizers>
-        <TapGestureRecognizer
-            Tapped="doThing"
-            NumberOfTapsRequired="1"/>
-      </Image.GestureRecognizers>-->
-      </Image>
+      <Image Source="back_small.jpg" Grid.RowSpan ="4" Grid.ColumnSpan="3" Aspect="AspectFill"></Image>
+      <Image Source="fabf.png" Grid.Row="0" Grid.ColumnSpan="3" Aspect="AspectFit"/>
 
       <Button x:Name="loginButton" Text="Sign-in" Grid.Row="1" Grid.Column="1" Clicked="loginButton_Clicked"/>
       <!--<Image Source="menu.png" Grid.Row="3" Grid.Column="0" Aspect="AspectFill">
