@@ -14,6 +14,8 @@ namespace FabFood.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
@@ -21,6 +23,9 @@ namespace FabFood.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
+
+            
+
         }
     }
 }

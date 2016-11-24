@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+  <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               x:Class="FabFood.Views.MainPage">
+    <Grid RowSpacing="0" ColumnSpacing="0">
+
+      <Grid.RowDefinitions>
+        <RowDefinition Height="5.8*" />
+        <RowDefinition Height="1.4*" />
+        <RowDefinition Height="1.4*" />
+        <RowDefinition Height="1.4*" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="3*"/>
+        <ColumnDefinition Width="4*"/>
+        <ColumnDefinition Width="3*"/>
+
+      </Grid.ColumnDefinitions>
+      <Image Source="back.jpg" Grid.RowSpan ="4" Grid.ColumnSpan="3" Aspect="AspectFill"></Image>
+      <Image Source="fabfoods2.png" Grid.Row="0" Grid.ColumnSpan="3" Aspect="AspectFit">
+        <!--<Image.GestureRecognizers>
+        <TapGestureRecognizer
+            Tapped="doThing"
+            NumberOfTapsRequired="1"/>
+      </Image.GestureRecognizers>-->
+      </Image>
+      <Image Source="menu.png" Grid.Row="3" Grid.Column="0" Aspect="AspectFill">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer
+              Tapped="openMenu"
+              NumberOfTapsRequired="1"/>
+        </Image.GestureRecognizers>
+      </Image>
+      <Image Source="book.png" Grid.Row="3" Grid.Column="1" Aspect="AspectFill">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer
+              Tapped="openBooking"
+              NumberOfTapsRequired="1"/>
+        </Image.GestureRecognizers>
+      </Image>
+      <Image Source="about.png" Grid.Row="3" Grid.Column="2" Aspect="AspectFill">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer
+              Tapped="openAbout"
+              NumberOfTapsRequired="1"/>
+        </Image.GestureRecognizers>
+      </Image>
+
+      <!--<Label x:Name="menuLabel"
+      Grid.Row="1"
+      Text ="Menu"
+      TextColor="Red"
+      FontSize="30"
+      HorizontalOptions="Center"
+      VerticalOptions="CenterAndExpand">
+    </Label>
+    <Label x:Name="bookLabel"
+      Grid.Row="2"
+      Text ="Book"
+      TextColor="Green"
+      Font="Large"
+      HorizontalOptions="Center"
+      VerticalOptions="CenterAndExpand">
+    </Label>
+    <Label x:Name="aboutLabel"
+      Grid.Row="3"
+      Text ="About"
+      TextColor="Blue"
+      Font="Large"
+      HorizontalOptions="Center"
+      VerticalOptions="CenterAndExpand">
+    </Label>-->
+    </Grid>
+  </ContentPage>
