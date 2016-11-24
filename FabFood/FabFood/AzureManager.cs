@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FabFood
 {
-    class AzureManager
+    public class AzureManager
     {
         private static AzureManager instance;
         private MobileServiceClient client;
@@ -41,6 +41,15 @@ namespace FabFood
         public async Task AddBookings(Bookings booking)
         {
             await this.bookingsTable.InsertAsync(booking);
+        }
+        public async Task DeleteUsersBooking(Bookings booking)
+        {
+            await this.bookingsTable.DeleteAsync(booking);
+
+        }
+        public async Task UpdateUsersBooking(Bookings booking)
+        {
+            await this.bookingsTable.UpdateAsync(booking);
         }
     }
 }

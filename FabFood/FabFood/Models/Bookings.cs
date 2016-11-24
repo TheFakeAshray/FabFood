@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FabFood.Models
 {
-    class Bookings
+    public class Bookings
     {
         [JsonProperty(PropertyName = "Id")]
         public string Id { get; set; }
@@ -23,5 +23,8 @@ namespace FabFood.Models
 
         [JsonProperty(PropertyName = "extraDetails")]
         public string ExtraDetails { get; set; }
+
+        [JsonProperty(PropertyName = "userId")]
+        public string UserId { get; set; }
     }
 }

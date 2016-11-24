@@ -67,9 +67,10 @@
 
     <Label Text="EXTRA DEETS B" Grid.Row="3" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
     <!--Submit-->
-    <Label Text="SUBMIT WOO" Grid.Row="4" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
 
-    <Button x:Name="submitBookingButton" Text="Submit Booking" Clicked="postBooking" Grid.Row="4" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-
-  </Grid>
+    <StackLayout Orientation="Horizontal" Grid.Row="4" Grid.ColumnSpan="2" HorizontalOptions="Center" >
+      <Button x:Name="submitBookingButton" Text="Submit Booking" Clicked="postBooking" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+      <Button x:Name="deleteBookingButton" Text="Delete Booking" Clicked="deleteBoooking" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+   </Grid>
 </ContentPage>
