@@ -20,7 +20,7 @@ namespace FabFood.Droid
         protected override void OnCreate(Bundle bundle)
         {
             Xamarin.FormsMaps.Init(this, bundle);
-            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+            CurrentPlatform.Init();
 
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
@@ -29,7 +29,7 @@ namespace FabFood.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             // Initialize the authenticator before loading the app.
-            App.Init((IAuthenticate)this);
+            App.Init(this);
             LoadApplication(new App());
         }
         public async Task<bool> Authenticate()
@@ -38,7 +38,6 @@ namespace FabFood.Droid
             var message = string.Empty;
             try
             {
-                // Sign in with Facebook login using a server-managed flow.
                 user = await AzureManager.AzureManagerInstance.AzureClient.LoginAsync(this,
                     MobileServiceAuthenticationProvider.Facebook);
                 if (user != null)

@@ -65,7 +65,7 @@
     <!--Date-->
     <DatePicker x:Name="datePicker" Grid.Row="2" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
 
-    <Editor x:Name="extraDetails" Text="EXTRA DEETS" Grid.Row="3" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+    <Editor x:Name="extraDetails" Text="Please enter any extra details here." Grid.Row="3" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
     <!--Submit-->
 
     <StackLayout Orientation="Horizontal" Grid.Row="4" Grid.ColumnSpan="2" HorizontalOptions="Center" >

@@ -22,6 +22,12 @@ namespace FabFood.Views
         public BookPage()
         {
             InitializeComponent();
+            DateTime myDateTime = DateTime.Now;
+
+            datePicker.MaximumDate = myDateTime.AddHours(336);
+            datePicker.MinimumDate = myDateTime;
+            timePicker.Time = myDateTime.TimeOfDay;
+            
             this.peopleValue = 1;
             peopleNumber.Text = this.peopleValue.ToString();
 
