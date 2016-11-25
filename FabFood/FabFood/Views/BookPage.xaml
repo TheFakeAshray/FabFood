@@ -4,7 +4,7 @@
              x:Class="FabFood.Views.BookPage">
   <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
 
-  <Grid RowSpacing="0">
+  <Grid RowSpacing="0" ColumnSpacing="0">
     <Grid.RowDefinitions>
       <RowDefinition Height="3.75*" />
       <RowDefinition Height="1.875*" />
@@ -18,7 +18,7 @@
     </Grid.ColumnDefinitions>
     <!--"Lets Book!"-->
 
-    <Image Source="back_book.png" Grid.Row="0" Grid.ColumnSpan="2" Aspect="AspectFill" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+    <Image Source="back_book.png" Grid.Row="0" Grid.ColumnSpan="2" Aspect="Fill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
     <!--Number Of People-->
     <Grid Grid.Row="1" Grid.Column="0" ColumnSpacing="0" RowSpacing="0">
       <Grid.ColumnDefinitions>
@@ -65,7 +65,7 @@
     <!--Date-->
     <DatePicker x:Name="datePicker" Grid.Row="2" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
 
-    <Label Text="EXTRA DEETS B" Grid.Row="3" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+    <Editor x:Name="extraDetails" Text="EXTRA DEETS" Grid.Row="3" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
     <!--Submit-->
 
     <StackLayout Orientation="Horizontal" Grid.Row="4" Grid.ColumnSpan="2" HorizontalOptions="Center" >

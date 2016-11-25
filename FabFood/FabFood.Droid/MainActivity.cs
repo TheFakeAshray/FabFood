@@ -43,7 +43,7 @@ namespace FabFood.Droid
                     MobileServiceAuthenticationProvider.Facebook);
                 if (user != null)
                 {
-                    message = string.Format("you are now signed-in as {0}.",
+                    message = string.Format("Hey, you're signed in! Now you can book a table ;)",
                         user.UserId);
                     success = true;
                 }

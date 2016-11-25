@@ -99,6 +99,7 @@ namespace FabFood.Views
                         item.Time = timePicker.Time.ToString();
                         item.Date = datePicker.Date;
                         item.UserId = userId;
+                        item.ExtraDetails = extraDetails.Text;
                         await AzureManager.AzureManagerInstance.UpdateUsersBooking(item);
                         await DisplayAlert("Nice!", "Your booking has been /updated/. See you soon!", "kewl.");
                         updated = true;
@@ -109,7 +110,7 @@ namespace FabFood.Views
                     Bookings book = new Bookings()
                     {
                         NumberOfPeople = this.peopleValue,
-                        ExtraDetails = "NoDetailsForNow",
+                        ExtraDetails = extraDetails.Text,
                         Time = timePicker.Time.ToString(),
                         Date = datePicker.Date,
                         UserId = userId
