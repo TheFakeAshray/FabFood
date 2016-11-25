@@ -14,6 +14,9 @@ namespace FabFood
         {
             HeightRequest = 50;
             BackgroundColor = Color.White;
+            BorderWidth = 0;
+            BorderColor = Color.White;
+            BorderRadius = 0;
             
 
             Text = name;

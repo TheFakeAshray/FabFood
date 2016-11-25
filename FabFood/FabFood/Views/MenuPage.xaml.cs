@@ -14,7 +14,7 @@ namespace FabFood.Views
         {
             Content = new StackLayout
             {
-                Padding = new Thickness(0, Device.OnPlatform<int>(0, 0, 0), 0, 0),
+                Padding = new Thickness(0, 0, 0, 0),
                 Children = {
                 new Image { Aspect=Aspect.AspectFit, Source = "fabfoods_menu2.png" },
                 new MainLink("MainPage"),
